@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<html>
+
+
+
+<script type="text/javascript">
+function validateForm()
+ {	
+
+	var x = document.forms["contactform"]["name"].value;
+    if (x==null || x=="" ) {
+        alert("Required Name");
+		return false;
+		
+    }
+	if (x!=null && x.length<3 )
+	{
+        alert("Required Name Minimum 3 Characters");
+		return false;
+		
+    }
+  	
+	var x = document.forms["contactform"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Required a valid Email Address");
+        return false;
+    }
+	       
+  
+  
+    
+    
+	var x = document.forms["contactform"]["message"].value;
+    if (x==null || x=="") {
+        alert("Required Message");
+        return false;
+    }
+	if (x!=null && x.length<11 )
+	{
+        alert("Required Message Minimum 11 Character");
+		return false;
+		
+    }
+      	
+}
+
+function alphaOnly(event) {
+  var key = event.keyCode;
+  return ((key >= 65 && key <= 90) || key == 8 || key == 32);
+}
+
+function spacea(event) {
+  var key = event.keyCode;
+  return (key != 32);
+}
+
+function isNumberKey(evt)
+      {
+         var charCode = (evt.which) ? evt.which : event.keyCode
+         if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+
+         return true;
+      }
+
+</script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>THRIVEMBS </title>
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/ie.css" />
+
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+<div id="top"  data-magellan-expedition="fixed">
+	<div class="row" style="height:10px;">
+		<div class="large-12 columns">
+			<nav class="top-bar">
+			  <ul class="title-area">
+			  <li class="name logo">
+			      <a href="index.html"><img src="img/logo.png"  width="200" height="100" alt=""></a>
+			    </li>
+			    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			  </ul>
+			
+			  <section class="top-bar-section">
+			    <ul class="right" id="menu">
+			      <li data-magellan-arrival="ADMIN"><a href="#ADMIN">ADMIN</a></li>
+			      <li data-magellan-arrival="RMS"><a href="#RMS">RMS</a></li>
+			      <li data-magellan-arrival="JOB PORTAL"><a href="#JOB PORTAL">JOB PORTAL</a></li>
+			      <li data-magellan-arrival="HR"><a href="#HR">HR</a></li>
+				  <li data-magellan-arrival="PAYROLL"><a href="#PAYROLL">PAYROLL</a></li>
+				   <li data-magellan-arrival="CRM"><a href="#CRM">CRM</a></li>
+			      <li data-magellan-arrival="FINANCE"><a href="#FINANCE">FINANCE</a></li>
+			      
+		<li data-magellan-arrival="SUPPORT"><a href="#">SUPPORT</a></li>
+		<li data-magellan-arrival="PAYMENT"><a href="#">PAYMENT</a></li>
+		<li data-magellan-arrival="CONTACTUS"><a href="#CONTACTUS">CONTACT US</a></li>
+			    </ul>
+			  </section>
+			</nav>
+			
+					
+		</div>
+		
+	</div>
+</div>
+
+<header id="header" >
+	<div class="row" style="height:700px;">
+   
+   <table style="width:415px; height:auto;">
+   <tr><td colspan="2">
+          <img border="0" src="img/sbi.png" width="416" height="65"></td>
+        </tr>
+   <tr><td colspan="2"><a href="https://www.onlinesbi.com/" style="margin-left:110px;"> <font color="red">Login to SBI Internet Banking</font></a></td></tr>
+   </table>
+        
+		
+		
+	</div>
+</header>
+
+ 
+	
+<footer>
+	<div class="row">
+		<div class="large-6 columns">
+			<ul class="inline-list" style="font-size:13px;width:850px;">
+			
+			  <li class="copyright"> <a href="footer.html#TERMS AND CONDITIONS">Terms & Conditions</a></li>
+			  <li class="copyright"> |</li>
+			   <li class="copyright"> <a href="footer.html#PRIVACY POLICY">Privacy Policy</a></li>
+			 <li class="copyright"> |</li>
+			  <li class="copyright"><a href="footer.html#USER ACCOUNT POLICY">User Account Policy</a></li>
+			  <li class="copyright"> |</li>
+			   <li class="copyright"> <a href="footer.html#PAYMENT POLICY">Payment Policy</a></li>
+			   <li class="copyright"> |</li>
+			   
+
+			   <li class="copyright"> <a href="#">All Rights Reserved &copy;THRIVE SMARTER</a></li>
+			   </font>
+  			</ul>
+		</div>
+		<div class="large-6 columns">
+			<ul class="inline-list social-media right" style="margin-left:50px;">
+				<li><a href="#" class="icon icon-facebook" class="icon icon-facebook"></a></li>
+				<li><a href="#" class="icon icon-twitter" class="icon icon-twitter" class="icon icon-twitter"></a></li>
+				<li><a href="#" class="icon icon-linkedin" class="icon icon-linkedin"></a></li>
+		
+			</ul>
+		</div>
+	</div>
+	
+
+</footer>	
+			
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/foundation.min.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+  <script src="js/jquery.localscroll-1.2.7.js" type="text/javascript"></script>
+  <script src="js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/flexslider.css"> <!-- Flex slider -->
+  <script src="js/jquery.flexslider.js" type="text/javascript"></script><!-- Flex slider -->
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>

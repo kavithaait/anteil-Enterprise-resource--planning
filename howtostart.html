@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<html>
+
+<head>
+
+<script type="text/javascript">
+function validateForm()
+ {	
+
+	var x = document.forms["contactform"]["name"].value;
+    if (x==null || x=="" ) {
+        alert("Required Name");
+		return false;
+		
+    }
+	if (x!=null && x.length<3 )
+	{
+        alert("Required Name Minimum 3 Characters");
+		return false;
+		
+    }
+  	
+	var x = document.forms["contactform"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Required a valid Email Address");
+        return false;
+    }
+	       
+  
+  
+    
+    
+	var x = document.forms["contactform"]["message"].value;
+    if (x==null || x=="") {
+        alert("Required Message");
+        return false;
+    }
+	if (x!=null && x.length<11 )
+	{
+        alert("Required Message Minimum 11 Character");
+		return false;
+		
+    }
+      	
+}
+
+function alphaOnly(event) {
+  var key = event.keyCode;
+  return ((key >= 65 && key <= 90) || key == 8 || key == 32);
+}
+
+function spacea(event) {
+  var key = event.keyCode;
+  return (key != 32);
+}
+
+function isNumberKey(evt)
+      {
+         var charCode = (evt.which) ? evt.which : event.keyCode
+         if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+
+         return true;
+      }
+
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>THRIVEMBS - How to Start</title>
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/ie.css" />
+ <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+
+<script type="text/javascript">
+var LHCChatOptions = {};
+LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500};
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+var refferer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
+var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+po.src = '//thrivesmarter.com/livehelper/index.php/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true?r='+refferer+'&l='+location;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+
+</head>
+<body>
+<div id="top"  data-magellan-expedition="fixed">
+	<div class="row">
+		<div class="large-12 columns">
+			<nav class="top-bar">
+			  <ul class="title-area">
+			   <li class="name logo">
+			      <a href="index.html"><img src="img/logo.png" width="200" height="100" alt=""></a>
+			    </li>
+			    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			  </ul>
+			
+			  <section class="top-bar-section">
+			    <ul class="right" id="menu">
+			      <li data-magellan-arrival="ADMIN"><a href="#ADMIN">ADMIN</a></li>
+			      <li data-magellan-arrival="RMS"><a href="#RMS">RMS</a></li>
+			      <li data-magellan-arrival="JOB PORTAL"><a href="#JOB PORTAL">JOB PORTAL</a></li>
+			      <li data-magellan-arrival="HR"><a href="#HR">HR</a></li>
+				  <li data-magellan-arrival="PAYROLL"><a href="#PAYROLL">PAYROLL</a></li>
+				   <li data-magellan-arrival="CRM"><a href="#CRM">CRM</a></li>
+			      <li data-magellan-arrival="FINANCE"><a href="#FINANCE">FINANCE</a></li>
+			      
+		<li data-magellan-arrival="SUPPORT"><a href="#">SUPPORT</a></li>
+		<li data-magellan-arrival="PAYMENT"><a href="#">PAYMENT</a></li>
+		<li data-magellan-arrival="CONTACTUS"><a href="#CONTACTUS">CONTACT US</a></li>
+			    </ul>
+			  </section>
+			</nav>
+			
+		<a class="download-btn1" href="http://carrierkart.com/" target="_blank" style="margin-right:15px;">JOB SEEKER</a>
+						<a class="download-btn2" href="../Login/login.php" style="margin-right:15px;">LOGIN</a>				
+		</div>
+		
+	</div>
+</div>
+
+<header id="header" >
+	<div class="row">
+    
+    	<div class="large-6 columns">
+			<div id="teaser-slider-2">
+							<div class="flexslider">
+								<ul class="slides">
+									<li>
+										<img src="img/slides/iphoneshots-1.jpg" alt="Petrichor - slider">
+									</li>
+									<li>
+										<img src="img/slides/iphoneshots-2.jpg" alt="Petrichor - slider">
+									</li>
+									<li>
+										<img src="img/slides/iphoneshots.jpg" alt="Petrichor - slider">
+									</li>
+								</ul>
+							</div> 
+						</div>
+		</div>
+        
+		<div class="large-6 columns">
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+			<h1>How to start</h1>
+			
+	      
+		</div>
+		
+	</div>
+</header>
+
+<div id="ADMIN" class="section features" data-magellan-destination="ADMIN">
+	<div class="row hi-icon-wrap hi-icon-effect-3 hi-icon-effect-3b"><br><br><br>
+	<h2>ADMIN</h2>
+		
+                        <ul class="unstyled">
+<p align="justify" style="line-height:4em;">Home Page - Displays a dashboard of Users and Usage reports.<br>
+Company Profile - Add and edit company profile details.<br>
+Change Password - Change password periodically.<br>
+Sub User - Additional login to your domain that you can create and grant limited access.
+</p>
+	</div>
+</div>
+<div id="RMS" class="section product gray" data-magellan-destination="RMS">
+	<div class="row">
+		<div class="large-12 columns">
+		<br><br><br>
+			<h2>RECRUITMENT MANAGEMENT SYSTEM</h2>
+			    <ul class="unstyled">
+                          <p align="justify" style="line-height:4em;">Home Page - Displays a dashboard of CV classification count, as per the Auto Search Assistant preferences. This can be modified by clicking on the speaker button or Edit Auto Assistant link.<br>
+                          Create Vacancy - Enter Vacancy details and internal HR contact and project details and hit Post button. This will create a vacancy in the RMS.<br>
+                          Manage Vacancy - Track recommended and suitable CVs or make any amends to requirements accordingly. Results refresh instantaneously.<br>
+                          Candidate Status - Check candidate profiles who have applied for the vacancy, and update status accordingly.</p>
+		</div>
+	</div>
+</div>
+
+<div id="JOB PORTAL" class="section pricing gray" data-magellan-destination="JOB PORTAL">
+	<div class="row">
+		<div class="large-12 quotes columns"><br><br><br>
+			<h2>JOB PORTAL</h2>
+			
+                        <ul class="unstyled">
+<p align="justify" style="line-height:4em;">Home Page - Displays a dashboard of Users and Usage reports.<br>
+Job by Location - Search the job based on Location<br>
+Job by Industry - Search the job based on Industry<br>
+Advanced Search - Search for the job and View the details of candidates.
+</p>
+		</div>
+	</div>
+	
+	
+	</div>
+
+
+<div id="HR"  class="section contact gray" data-magellan-destination="HR">
+	
+    
+    <div class="row">
+		<div class="large-12 columns"><br><br><br>
+			<h2>HUMAN RESOURCE</h2>
+			  <ul class="unstyled">
+                          <p align="justify" style="line-height:4em;">Home Page - Displays a dashboard of Users and Usage reports.<br>
+                          Employee Details - Use this function to add, edit and track all employee records.<br>
+                          Attendance Settings - Track daily and monthly employee attendance. Also track late hours of employees.<br>
+                          Holiday List - Add, edit and track Holidays listed for the year.<br>
+                          </p>
+                          
+                        </ul>
+    
+		
+        </div>
+        </div>
+</div>
+	<div id="PAYROLL" class="section product gray" data-magellan-destination="PAYROLL">
+	<div class="row">
+		<div class="large-12 columns">
+			<br><br><br>
+			<h2>PAYROLL</h2>
+			     
+                        <ul class="unstyled">
+                          <p align="justify" style="line-height:4em;">Home Page - Displays a dashboard of Users and Usage reports.<br>
+                          Loan - Add, edit and track details of Loan availed by employees.<br>
+                          Settings - Add, edit and track compensation, payroll and compensation deduction settings<br>
+                          Salary Computation - Extract and track salary statements of employees.</p>
+                        </ul>
+		</div>
+	</div>
+</div>
+<div id="CRM" class="section product gray" data-magellan-destination="CRM">
+	<div class="row">
+		<div class="large-12 columns">
+			<br><br><br>
+			<h2>CUSTOMER RELATIONSHIP MANAGEMENT</h2>
+			 
+                        <ul class="unstyled">
+<p align="justify" style="line-height:4em;">Home Page - Displays a dashboard of Users and Usage reports.<br>
+Client list - Add, edit and track Clients.<br>
+Contact Details - Add, edit and track Contacts.<br>
+Leads - Add, edit and track Leads.<br>
+Prospects - Add, edit and track Prospects.<br>
+Forecast - Tabulated Report of Sales Forecast.<br>
+Services - Edit and track Servicess.
+</p>                  
+                        </ul>
+		</div>
+	</div>
+</div>
+<div id="FINANCE" class="section product gray" data-magellan-destination="FINANCE">
+	<div class="row">
+		<div class="large-12 columns">
+			<br><br><br>
+			<h2>FINANCE</h2>
+			 
+                        <ul class="unstyled">
+                          <p align="justify" style="line-height:4em;">Home Page - Track profit and loss.<br>
+                          Asset - <br>
+                          Liability - <br>
+                          Income - <br>
+                          Expences - <br>
+                          Transaction - <br>
+                          Reports -</p>
+                        </ul>
+		</div>
+	</div>
+</div>
+<div id="CONTACTUS" class="section product gray" data-magellan-destination="CONTACTUS">
+	<div class="row">
+		<div class="large-12 columns">
+			<br><br><br>
+						<h2>Get in Touch</h2>
+			
+		<form method="post" action="send_form_email.php" id="contactform" onsubmit="return validateForm()">
+					<div>
+						<label for="name">Enter Your Name</label>
+						<input type="text" class="input-field" id="name" name="name" style="background-color: #fff;display: block;padding: 0.5em;height:2.3125em;width: 100%;"value="">
+					</div>
+					<div>
+						<label for="email">Enter Your E-mail ID</label>
+						<input type="text" class="input-field" id="email"  style="background-color: #fff;display: block;padding: 0.5em;height:2.3125em;width: 100%;"name="email" onkeydown="return spacea(event);" value="">
+					</div>
+					<div>
+						<label>Type Your Message</label>
+						<textarea id="message"  style="background-color: #fff;display: block;padding: 0.5em;height:2.3125em;width: 100%;" name="message"></textarea>
+					</div>
+					<input type="submit"  id="submit" name="submit" value="SUBMIT"  value="Send Email" class="button" style="width:100%;">
+					
+				</form>
+
+        </div>
+        </div>
+	<div id="pricing-table" class="section pricing gray" data-magellan-destination="pricing">
+	<div class="row">
+		<div class="large-12 quotes columns">
+			
+		</div>
+	</div>
+	<div class="row price-table">
+		<div class="large-4 columns">
+			 <div class="map">             
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24299.708115904683!2d-3.665582582141257!3d40.42073417773243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289830845f35%3A0x1568942f3e4b077!2sVelazquez%2C+15!5e0!3m2!1sen!2sin!4v1403849916889" 
+		 style="width:300px;height:250px;float:left;">
+		 </iframe>
+ </div>
+		</div>
+		<div class="large-4 columns">
+			
+          <h5>INDIAN OFFICE ADDRESS</h5>
+           <p>
+#19,8<sup>th</sup>&nbsp;Block, Dr.Rajkumar Road</br> JSS Layout</br>Mysore-570 019</br>
+Website:&nbsp;www.thrivesmarter.com <br/>Email:&nbsp;infoin@thrivesmarter.com </p> 
+
+
+<h5>FIND US</h5>
+                <p>Mail Us : helpdesk@thrivembs.com</p>  
+				
+		</div>
+		<div class="large-4 columns">
+			 <h5>HEAD QUARTERS ADDRESS</h5>
+            <p >
+
+Velázquez, 15<br/> 28001 Madrid, Spain</br>
+
+Fax :&nbsp;&nbsp;&nbsp; +34 91 431 55 69
+          </P>  
+		<h5>CALL US</h5>
+                <p>Telephone : 0821 6888858
+                 <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; +3491 7373749</p>
+
+		</div>
+	</div>
+</div>	
+		
+</div>
+<footer>
+	<div class="row">
+		<div class="large-6 columns">
+			<ul class="inline-list" style="font-size:13px;width:850px;">
+			
+			  <li class="copyright"> <a href="footer.html#TERMS AND CONDITIONS">Terms & Conditions</a></li>
+			  <li class="copyright"> |</li>
+			   <li class="copyright"> <a href="footer.html#PRIVACY POLICY">Privacy Policy</a></li>
+			 <li class="copyright"> |</li>
+			  <li class="copyright"><a href="footer.html#USER ACCOUNT POLICY">User Account Policy</a></li>
+			  <li class="copyright"> |</li>
+			   <li class="copyright"> <a href="footer.html#PAYMENT POLICY">Payment Policy</a></li>
+			   <li class="copyright"> |</li>
+			   
+
+			   <li class="copyright"> <a href="#">All Rights Reserved &copy;THRIVE SMARTER</a></li>
+			   </font>
+  			</ul>
+		</div>
+		<div class="large-6 columns">
+			<ul class="inline-list social-media right" style="margin-left:50px;">
+				<li><a href="" class="icon icon-facebook"></a></li>
+				<li><a href="" class="icon icon-twitter"></a></li>
+				<li><a href="" class="icon icon-linkedin"></a></li>
+		
+			</ul>
+		</div>
+	</div>
+	
+
+</footer>			
+			
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/foundation.min.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+  <script src="js/jquery.localscroll-1.2.7.js" type="text/javascript"></script>
+  <script src="js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/flexslider.css"> <!-- Flex slider -->
+  <script src="js/jquery.flexslider.js" type="text/javascript"></script><!-- Flex slider -->
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>
